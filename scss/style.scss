@@ -44,8 +44,6 @@ body {
   }
 }
 .logo {
-  &__link {
-  }
   &__img {
     display: block;
   }
@@ -80,7 +78,30 @@ body {
   background-color: $color_black;
   color: $color_white;
 }
-
+.slick-dots {
+  position: absolute;
+  top: 0;
+  li + li {
+    padding-top: 10px;
+  }
+  button {
+    font-size: 0;
+    padding: 0;
+    border: none;
+    width: 3px;
+    height: 25px;
+    border-radius: 7px;
+    background-color: $color_black;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $color_red;
+    }
+  }
+}
+.slick-active button {
+  background-color: $color_red;
+}
 .product {
   padding: 100px 0 150px;
   &__inner {
@@ -118,24 +139,33 @@ body {
   }
 
   &__slider {
-    position: relative;
-  }
-  &__slider-img {
+    .slick-dots {
+      top: 50px;
+      right: 0;
+    }
   }
   &__table {
     display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 25px;
   }
   &__table-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 160px;
+    min-height: 58px;
+  }
+  &__table-num {
     text-transform: uppercase;
-    font-size: 14px;
     font-weight: 700;
-    line-height: 17px;
   }
   &__table-subtext {
-    display: block;
     text-transform: lowercase;
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
+    margin: auto 0;
   }
 }
