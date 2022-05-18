@@ -71,6 +71,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 24px;
@@ -81,17 +82,16 @@ body {
 }
 
 .product {
+  padding: 100px 0 150px;
   &__inner {
     display: flex;
     justify-content: space-between;
-  }
-  &__content {
   }
   &__title {
     font-size: 64px;
     font-weight: 700;
     line-height: 77px;
-    margin-top: 169px;
+    margin-top: 69px;
     margin-bottom: 5px;
   }
   &__subtitle {
@@ -113,17 +113,29 @@ body {
     display: inline-block;
   }
   &__box {
+    max-width: 630px;
+    margin-left: 30px;
   }
+
   &__slider {
-  }
-  &__slider-item {
+    position: relative;
   }
   &__slider-img {
   }
   &__table {
+    display: flex;
   }
-  &__table-row {
+  &__table-text {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
   }
-  &__table-date {
+  &__table-subtext {
+    display: block;
+    text-transform: lowercase;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
   }
 }

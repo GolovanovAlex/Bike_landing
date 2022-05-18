@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -68,61 +69,62 @@
           </div>
           <div class="product__box">
             <div class="product__slider">
-              <div class="product__slider-item">
-                <img
-                  src="images/product/bike_01.jpg"
-                  alt="Bike"
-                  class="product__slider-img"
-                />
-              </div>
-              <div class="product__slider-item">
-                <img
-                  src="images/product/bike_02.jpg"
-                  alt="Bike"
-                  class="product__slider-img"
-                />
-              </div>
-              <div class="product__slider-item">
-                <img
-                  src="images/product/bike_03.jpg"
-                  alt="Bike"
-                  class="product__slider-img"
-                />
-              </div>
-              <div class="product__slider-item">
-                <img
-                  src="images/product/bike_04.jpg"
-                  alt="Bike"
-                  class="product__slider-img"
-                />
-              </div>
-              <div class="product__slider-item">
-                <img
-                  src="images/product/bike_05.jpg"
-                  alt="Bike"
-                  class="product__slider-img"
-                />
-              </div>
+              <img
+                src="images/product/bike_01.jpg"
+                alt="Bike"
+                class="product__slider-img"
+              />
+              <img
+                src="images/product/bike_02.jpg"
+                alt="Bike"
+                class="product__slider-img"
+              />
+
+              <img
+                src="images/product/bike_03.jpg"
+                alt="Bike"
+                class="product__slider-img"
+              />
+
+              <img
+                src="images/product/bike_04.jpg"
+                alt="Bike"
+                class="product__slider-img"
+              />
+
+              <img
+                src="images/product/bike_05.jpg"
+                alt="Bike"
+                class="product__slider-img"
+              />
             </div>
-            <table class="product__table">
-              <tr class="product__table-row">
-                <td class="product__table-date">до 100 км</td>
-                <td class="product__table-date">25 км/ч</td>
-                <td class="product__table-date">3 режима езды</td>
-                <td class="product__table-date">25 кг</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-date">Запас хода</td>
-                <td class="product__table-date">Макс корость</td>
-                <td class="product__table-date">
-                  механический, гибридный, электрический
-                </td>
-                <td class="product__table-date">вес</td>
-              </tr>
-            </table>
+            <ul class="product__table">
+              <li class="product__table-text">
+                До 100 км
+                <span class="product__table-subtext">Запас хода</span>
+              </li>
+              <li class="product__table-text">
+                25 км/ч
+                <span class="product__table-subtext">Макс корость</span>
+              </li>
+              <li class="product__table-text">
+                3 режима езды
+                <span class="product__table-subtext"
+                  >механический, гибридный, электрический</span
+                >
+              </li>
+              <li class="product__table-text">
+                25 кг
+                <span class="product__table-subtext">вес</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
