@@ -169,3 +169,59 @@ body {
     margin: auto 0;
   }
 }
+.info {
+  &_img {
+    flex-basis: 570px;
+    object-fit: cover;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__box {
+    margin-left: 60px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    max-width: 450px;
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.characteristic {
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__items {
+  }
+  &__list {
+  }
+  &__list-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color_white;
+    background-color: $color_black;
+  }
+  &__line {
+  }
+  &__name {
+  }
+  &__descr {
+  }
+  &__img {
+  }
+}
