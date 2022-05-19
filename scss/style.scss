@@ -170,6 +170,8 @@ body {
   }
 }
 .info {
+  margin-bottom: 150px;
+
   &_img {
     flex-basis: 570px;
     object-fit: cover;
@@ -196,6 +198,7 @@ body {
   }
 }
 .characteristic {
+  margin-bottom: 150px;
   &__title {
     font-size: 16px;
     font-weight: 700;
@@ -207,21 +210,33 @@ body {
     display: flex;
   }
   &__items {
+    flex-basis: 570px;
+    margin-right: 60px;
   }
   &__list {
+    & + & {
+      padding-top: 30px;
+    }
   }
   &__list-title {
     font-weight: 700;
     text-transform: uppercase;
     color: $color_white;
     background-color: $color_black;
+    padding: 2px 0 3px;
+    margin-bottom: 10px;
   }
   &__line {
+    display: flex;
+    padding-top: 5px;
   }
   &__name {
+    flex-basis: 285px;
   }
   &__descr {
+    flex-basis: 285px;
   }
   &__img {
+    align-self: center;
   }
 }
