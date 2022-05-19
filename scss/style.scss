@@ -240,3 +240,12 @@ body {
     align-self: center;
   }
 }
+.bikes {
+  margin-bottom: 50px;
+  &__slider {
+  }
+  &__img {
+    align-self: center;
+    margin-left: 50px;
+  }
+}
