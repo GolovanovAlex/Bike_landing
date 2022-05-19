@@ -316,12 +316,151 @@
     <div class="bikes">
       <div class="container">
         <div class="bikes__slider">
-          <img src="images/content/himo_01.jpg" alt="HIMO" class="bikes__img" />
-          <img src="images/content/himo_02.jpg" alt="HIMO" class="bikes__img" />
-          <img src="images/content/himo_03.jpg" alt="HIMO" class="bikes__img" />
+          <div class="bikes__slider-item">
+            <img
+              src="images/content/himo_01.jpg"
+              alt="HIMO"
+              class="bikes__img"
+            />
+          </div>
+          <div class="bikes__slider-item">
+            <img
+              src="images/content/himo_02.jpg"
+              alt="HIMO"
+              class="bikes__img"
+            />
+          </div>
+          <div class="bikes__slider-item">
+            <img
+              src="images/content/himo_03.jpg"
+              alt="HIMO"
+              class="bikes__img"
+            />
+          </div>
         </div>
       </div>
     </div>
+    <section class="order">
+      <div class="container">
+        <div class="order__inner">
+          <form action="" class="form">
+            <h3 class="form__title">Заказать</h3>
+
+            <p class="form__text">
+              Если Вы хотите заказать велосипед, оставьте свой контакт и наш
+              менеджер перезвонит вам в ближайшее время
+            </p>
+
+            <input type="text" class="form__input-name" placeholder="Имя" />
+
+            <input type="tel" class="form__input-phone" placeholder="Телефон" />
+            <p class="form__input-text">выберите желаемый цвет</p>
+
+            <div class="form__lable-box">
+              <label class="form__lable">
+                <input
+                  type="radio"
+                  name="bike"
+                  id=""
+                  class="form__input-radio"
+                />
+                <div class="form__bike">
+                  <img
+                    src="images/product/bike_grey.jpg"
+                    alt="Grey HIMO"
+                    class="form__bike-img"
+                  />
+                  <p class="form__bike-price"><span>33999 грн.</span></p>
+                </div>
+                <div class="form__radio-style form__radio-style--grey"></div>
+              </label>
+              <label class="form__lable">
+                <input
+                  type="radio"
+                  name="bike"
+                  id=""
+                  class="form__input-radio"
+                  checked
+                />
+                <div class="form__bike">
+                  <img
+                    src="images/product/bike_white.jpg"
+                    alt="White HIMO"
+                    class="form__bike-img"
+                  />
+                  <p class="form__bike-price"><span>32999 грн.</span></p>
+                </div>
+                <div class="form__radio-style form__radio-style--white"></div>
+              </label>
+              <label class="form__lable">
+                <input
+                  type="radio"
+                  name="bike"
+                  id=""
+                  class="form__input-radio"
+                />
+                <div class="form__bike">
+                  <img
+                    src="images/product/bike_red.jpg"
+                    alt="Red HIMO"
+                    class="form__bike-img"
+                  />
+                  <p class="form__bike-price"><span>35999 грн.</span></p>
+                </div>
+                <div class="form__radio-style form__radio-style--red"></div>
+              </label>
+            </div>
+            <button class="form__btn button" type="submit">ЗАКАЗАТЬ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">
+              <img
+                src="images/icon/instagram.svg"
+                alt="Instagram"
+                class="footer__social-img"
+              />
+            </a>
+            <a href="#" class="footer__social-link">
+              <img
+                src="images/icon/facebook.svg"
+                alt="Facebook"
+                class="footer__social-img"
+              />
+            </a>
+          </div>
+          <div class="footer__contacts">
+            <a href="tel:+380506777777" class="footer__contacts-link"></a>
+              <img
+                src="images/icon/phone.svg"
+                alt="Phone"
+                class="footer__contacts-img"
+              />
+              <span> +38 050 677 77 77</span>
+            </a>
+            <a
+              href="mailto:elektrobikeukr@gmail.com"
+              class="footer__contacts-link"
+            >
+              <img
+                src="images/icon/mail.svg"
+                alt="Mail"
+                class="footer__contacts-img"
+              />
+              <span>elektrobikeukr@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>

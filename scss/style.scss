@@ -75,8 +75,15 @@ body {
   line-height: 24px;
   letter-spacing: 1.1em;
   padding: 28px 71px;
+  border: none;
   background-color: $color_black;
   color: $color_white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $color_red;
+    color: $color_white;
+  }
 }
 .slick-dots {
   position: absolute;
@@ -242,10 +249,152 @@ body {
 }
 .bikes {
   margin-bottom: 50px;
-  &__slider {
-  }
-  &__img {
-    align-self: center;
+  &__slider-item {
     margin-left: 50px;
+  }
+}
+.order {
+  margin-bottom: 100px;
+  &__inner {
+    position: relative;
+  }
+}
+.form {
+  max-width: 420px;
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__text {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  &__input-text {
+    color: $color_grey;
+    opacity: 0.5;
+    margin-bottom: 10px;
+  }
+  &__input-name {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color_black;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    &::placeholder {
+      color: $color_grey;
+      opacity: 0.5;
+    }
+  }
+  &__input-phone {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color_black;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    &::placeholder {
+      color: $color_grey;
+      opacity: 0.5;
+    }
+  }
+  &__lable-box {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__lable {
+    & + & {
+      margin-left: 23px;
+    }
+  }
+  &__input-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    &:checked + .form__bike {
+      display: block;
+    }
+  }
+  &__bike {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__bike-price {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 220px;
+    height: 100px;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color_red;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      width: 220px;
+      height: 100px;
+      border: 1px solid $color_red;
+      border-radius: 50%;
+    }
+  }
+  &__radio-style {
+    width: 80px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  &__radio-style--grey {
+    background-color: $color_grey;
+  }
+  &__radio-style--white {
+    background-color: $color_white;
+    border: 1px solid $color_grey;
+  }
+  &__radio-style--red {
+    background-color: $color_red;
+  }
+}
+.footer {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: lowercase;
+  background-color: $color_black;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color_white;
+  }
+  &__link {
+    padding: 43px 0 42px;
+  }
+  &__social {
+  }
+  &__social-link {
+    & + & {
+      margin-left: 29px;
+    }
+  }
+  &__social-img {
+  }
+  &__contacts {
+  }
+  &__contacts-link {
+  }
+  &__contacts-img {
   }
 }
