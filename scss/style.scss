@@ -392,14 +392,38 @@ body {
     margin-right: 10px;
   }
 }
-// ---- ---- *** ---- ---- //
+// ---- ---- 1110 ---- ---- //
+@media (max-width: 1110px) {
+  .product {
+    padding-top: 0;
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__subtitle {
+      margin-bottom: 25px;
+    }
+    &__text {
+      max-width: 100%;
+      & + & {
+        margin-bottom: 30px;
+      }
+    }
+    &__box {
+      margin-top: 30px;
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+// ---- ---- 1000 ---- ---- //
 @media (max-width: 1000px) {
   .menu {
     margin-right: 0;
   }
 }
 
-// ---- ---- 620 ---- ---- //
+// ---- ---- 650 ---- ---- //
 @media (max-width: 650px) {
   .header {
     &__inner {
@@ -418,18 +442,61 @@ body {
       }
     }
     &__link {
-      padding: 30px 20px;
+      padding: 30px 15px;
+    }
+  }
+  .product {
+    &__title {
+      font-size: 50px;
+      line-height: 50px;
+      margin-top: 50px;
+    }
+    &__subtitle {
+      font-size: 29px;
+      line-height: 30px;
+    }
+    &__link {
+      display: block;
+      max-width: 420px;
+      padding: 25px 0;
+      margin: 0 auto;
     }
   }
 }
 
+// ---- ---- 470 ---- ---- //
+@media (max-width: 470px) {
+  .product {
+    &__table {
+      flex-wrap: wrap;
+    }
+    &__table-text {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+  }
+}
 // ---- ---- 420 ---- ---- //
 @media (max-width: 420px) {
   .menu {
     margin-top: 25px;
+    &__list {
+      justify-content: space-around;
+    }
 
     &__link {
-      padding: 20px 9px;
+      padding: 20px 7px;
+    }
+  }
+  .product {
+    &__title {
+      font-size: 37px;
+      line-height: 40px;
+      margin-top: 30px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 25px;
     }
   }
 }
@@ -445,6 +512,20 @@ body {
       display: flex;
       flex-direction: column;
       padding: 15px;
+    }
+  }
+  .product {
+    &__title {
+      font-size: 33px;
+      line-height: 38px;
+      margin-top: 25px;
+    }
+    &__subtitle {
+      font-size: 19px;
+      line-height: 25px;
+    }
+    &__link {
+      letter-spacing: 0.7em;
     }
   }
 }
