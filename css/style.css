@@ -462,8 +462,23 @@ body {
   color: #fff;
 }
 .footer__link {
+  text-decoration: underline;
   padding: 43px 0 42px;
 }
 .footer__social-link + .footer__social-link {
-  margin-left: 29px;
+  margin-left: 28px;
+}
+.footer__contacts-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__contacts-link + .footer__contacts-link {
+  margin-top: 10px;
+}
+.footer__contacts-img {
+  margin-right: 10px;
 }

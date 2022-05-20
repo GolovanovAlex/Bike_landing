@@ -380,21 +380,22 @@ body {
     color: $color_white;
   }
   &__link {
+    text-decoration: underline;
     padding: 43px 0 42px;
-  }
-  &__social {
   }
   &__social-link {
     & + & {
-      margin-left: 29px;
+      margin-left: 28px;
     }
   }
-  &__social-img {
-  }
-  &__contacts {
-  }
   &__contacts-link {
+    display: flex;
+    align-items: center;
+    & + & {
+      margin-top: 10px;
+    }
   }
   &__contacts-img {
+    margin-right: 10px;
   }
 }
