@@ -245,6 +245,9 @@ body {
   &__slider-item {
     margin-left: 50px;
   }
+  &__img {
+    object-fit: cover;
+  }
 }
 .order {
   margin-bottom: 100px;
@@ -419,6 +422,9 @@ body {
       max-width: 450px;
     }
   }
+  .bikes__img {
+    height: 550px;
+  }
 }
 
 // ---- ---- 1000 ---- ---- //
@@ -435,13 +441,20 @@ body {
       max-width: 500px;
     }
   }
+  .bikes__img {
+    height: 500px;
+  }
 }
 // ---- ---- 950 ---- ---- //
 @media (max-width: 950px) {
   .characteristic {
+    margin-bottom: 75px;
     &__img {
       max-width: 400px;
     }
+  }
+  .bikes__img {
+    height: 450px;
   }
 }
 
@@ -465,7 +478,11 @@ body {
       margin-right: 0;
     }
     &__name {
-      flex-basis: 400px;
+      margin-right: 15px;
+      flex-basis: 50%;
+    }
+    &__descr {
+      flex-basis: 50%;
     }
     &__img {
       margin: 0 auto;
@@ -500,6 +517,9 @@ body {
       object-position: bottom;
       margin: 0 auto;
     }
+  }
+  .bikes__img {
+    height: 375px;
   }
 }
 
@@ -542,10 +562,12 @@ body {
       margin: 0 auto;
     }
   }
-  .characteristic {
-    &__name {
-      flex-basis: 250px;
-      margin-right: 15px;
+  .bikes {
+    &__slider-item {
+      margin-left: 10px;
+    }
+    &__img {
+      height: 290px;
     }
   }
 }
@@ -560,6 +582,9 @@ body {
       width: 50%;
       margin-bottom: 10px;
     }
+  }
+  .bikes__img {
+    height: 240px;
   }
 }
 // ---- ---- 420 ---- ---- //
@@ -599,6 +624,9 @@ body {
       }
     }
   }
+  .bikes__img {
+    height: 200px;
+  }
 }
 
 // ---- ---- 360 ---- ---- //
@@ -632,11 +660,8 @@ body {
     &__line {
       font-size: 12px;
     }
-    &__name {
-      flex-basis: 200px;
-    }
-    &__descr {
-      flex-basis: 225px;
-    }
+  }
+  .bikes__img {
+    height: 170px;
   }
 }
