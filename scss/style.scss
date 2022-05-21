@@ -171,7 +171,7 @@ body {
 .info {
   padding: 50px 0 100px;
 
-  &_img {
+  &__img {
     flex-basis: 570px;
     object-fit: cover;
   }
@@ -421,6 +421,56 @@ body {
   .menu {
     margin-right: 0;
   }
+  .info {
+    &__box {
+      margin-left: 20px;
+    }
+    &__img {
+      flex-basis: 500px;
+      max-width: 500px;
+    }
+  }
+}
+
+// ---- ---- 900 ---- ---- //
+@media (max-width: 900px) {
+  .info {
+    &__box {
+      margin-left: 10px;
+    }
+    &__img {
+      flex-basis: 400px;
+      max-width: 400px;
+    }
+  }
+}
+
+// ---- ---- 800 ---- ---- //
+@media (max-width: 800px) {
+  .product {
+    padding-bottom: 20px;
+  }
+  .info {
+    padding-bottom: 20px;
+    &__inner {
+      flex-direction: column;
+    }
+    &__box {
+      max-width: 100%;
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+    &__text {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    &__img {
+      order: 2;
+      max-height: 450px;
+      object-position: bottom;
+      margin: 0 auto;
+    }
+  }
 }
 
 // ---- ---- 650 ---- ---- //
@@ -497,6 +547,13 @@ body {
     &__subtitle {
       font-size: 20px;
       line-height: 25px;
+    }
+  }
+  .info {
+    &__img {
+      max-height: 450px;
+      object-position: bottom;
+      margin: 0;
     }
   }
 }
