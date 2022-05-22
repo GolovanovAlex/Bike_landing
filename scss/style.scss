@@ -649,6 +649,27 @@ body {
       max-width: 420px;
     }
   }
+  .footer {
+    &__inner {
+      flex-direction: column;
+    }
+    &__social {
+      display: flex;
+      justify-content: space-between;
+      width: 80px;
+      margin: 35px 0;
+    }
+    &__social-link {
+      & + & {
+        margin-left: 0;
+      }
+    }
+    &__link {
+      padding: 0;
+      margin: 25px 0;
+      order: 3;
+    }
+  }
 }
 // ---- ---- 470 ---- ---- //
 @media (max-width: 470px) {
@@ -724,7 +745,7 @@ body {
       left: 30px;
     }
     &__bike-img {
-      width: 290px;
+      width: 280px;
     }
     &__btn {
       width: 100%;
@@ -767,7 +788,7 @@ body {
   }
   .form {
     &__bike {
-      left: 5px;
+      left: 15px;
     }
     &__bike-price {
       top: -90px;
