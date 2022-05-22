@@ -7,8 +7,8 @@ $(function () {
     arrows: false,
     dots: true,
     fade: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
   $('.menu, .product__content').on('click', 'a', function (event) {
     event.preventDefault();
