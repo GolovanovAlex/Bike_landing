@@ -1,4 +1,4 @@
-# Bike_landing
+# Bike landing
 
 ### Use Skills
 
@@ -9,7 +9,7 @@
 
 ---
 
-[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/Safari_in_Africa_landing/)
+[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/Bike_landing/)
 
 ![mercedes01](readme/mercedes01.gif)
 
