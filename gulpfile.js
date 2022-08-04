@@ -46,10 +46,10 @@ function images() {
         }),
       ])
     )
-    .pipe(dest('dist/images'));
+    .pipe(dest('docs/images'));
 }
 function cleanDist() {
-  return del('dist');
+  return del('docs');
 }
 
 function build() {
@@ -63,7 +63,7 @@ function build() {
       'app/*html',
     ],
     { base: 'app' }
-  ).pipe(dest('dist'));
+  ).pipe(dest('docs'));
 }
 
 function watching() {
